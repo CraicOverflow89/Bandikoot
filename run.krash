@@ -1,0 +1,20 @@
+/*
+ * Bandikoot Development Server
+ *
+ * @author CraicOverflow89
+ */
+
+// Include Framework
+fw_path = "src/main/krash/craicoverflow89/bandikoot/"
+include("$fw_path/Framework")
+
+// Create Application
+app = Application($CWD)
+
+// Create Server
+Network.createServer(7777) {path, method, params ->
+    app.request(path, method, params)
+}
+
+// Print Info
+echo("", "Bandikoot Initialised", "")

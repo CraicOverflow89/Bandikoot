@@ -1,0 +1,34 @@
+/*
+ * Application
+ *
+ * @param root - project root (come back to this)
+ */
+class Application(root) {
+
+	/*
+	 * Handles inbound requests
+	 *
+	 * @param path - requested path
+	 * @param method - HTTP method
+	 * @param params - map of parameters
+	 * @return response body
+	 */
+	fun request(path, method, params) {
+
+		// TEMP DEBUG
+		echo(
+			"Inbound Request",
+			" path:   $path",
+			" method: $method",
+			" params: $params",
+			""
+		)
+
+		// NOTE: need to use routing logic to determine which contorller to invoke
+		//       that will do stuff with models and views and ultimately return content
+
+		// TEMP RESPONSE
+		return "Hello World"
+	}
+
+}

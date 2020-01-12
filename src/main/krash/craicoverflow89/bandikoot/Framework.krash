@@ -1,0 +1,3 @@
+include("$fw_path/core/Application")
+include("$fw_path/core/Controller")
+include("$fw_path/core/Model")
